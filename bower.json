@@ -1,6 +1,6 @@
 {
   "name": "micro-query",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Aims to be a tiny and fast query parsing lib.",
   "main": "micro-query.js",
   "keywords": [
@@ -9,8 +9,12 @@
     "parsing"
   ],
   "authors": [
-    "Aaron Harvey"
+    {"name": "Aaron Harvey", "email" : "aaron.harvey@fairchildsemi.com" }
   ],
+  "repository" : {
+    "type" : "git",
+    "url" : "https://aaronharvey@bitbucket.org/aaronharvey/micro-query.git"
+  },
   "license": "MIT",
   "private": true,
   "ignore": [
