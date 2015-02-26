@@ -6,21 +6,25 @@
  */
 
 /* exported uQuery */
-window.uQuery = function(needle) {
+(function() {
     'use strict';
     var regex = /([^&=]+)=?([^&]*)/g;
     var search = window.location.search.substring(1);
     var hash = window.location.hash.split("?");
     hash.shift();
 
+    var store = {};
     var queryString = search || hash.join('?');
     if (!queryString) return undefined;
 
     var match;
     while ((match = regex.exec(queryString))) {
-        if (decodeURIComponent(match[1]) === needle)
-            return decodeURIComponent(match[2]);
+        store[decodeURIComponent(match[1])] = decodeURIComponent(match[2]);
     }
-};
+
+    window.uQuery = function (needle) {
+        return store[needle];
+    };
+})();
 
 /* TODO: Test against a cached version that preparses the url. */
