@@ -1,6 +1,22 @@
-micro-query.js
+# micro-query.js #
+A fast and very small url parameter parser based on [query-js](https://github.com/Nijikokun/query-js).
 
-a fast and very small url parameter parser based on query-js.
+## Features ##
+
+Handles URLs with parameters, including strings with hashes.
+
+## Usage ##
+
+```
+#!javascript
+
+window.uQuery('param');
+```
+
+
+## License ##
+
+The MIT License (MIT)
 
 Copyright (c) 2015 Aaron Harvey - aaron.harvey@fairchildsemi.com
 
