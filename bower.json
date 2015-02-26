@@ -1,0 +1,23 @@
+{
+  "name": "micro-query",
+  "version": "0.0.1",
+  "description": "Aims to be a tiny and fast query parsing lib.",
+  "main": "micro-query.js",
+  "keywords": [
+    "Params",
+    "query",
+    "parsing"
+  ],
+  "authors": [
+    "Aaron Harvey"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
