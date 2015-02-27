@@ -1,6 +1,6 @@
 {
   "name": "micro-query",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Aims to be a tiny and fast query parsing lib.",
   "main": "micro-query.js",
   "keywords": [
@@ -13,10 +13,9 @@
   ],
   "repository" : {
     "type" : "git",
-    "url" : "https://aaronharvey@bitbucket.org/aaronharvey/micro-query.git"
+    "url" : "https://bitbucket.org/aaronharvey/micro-query.git"
   },
   "license": "MIT",
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",

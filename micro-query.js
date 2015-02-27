@@ -1,6 +1,6 @@
 /*!
- *  uQuery - a fast and very small url parameter parser.
- *  0.1.0
+ *  uQuery - A minimal (<300 bytes minified) URL parameter parsing library.
+ *  0.1.1
  *  (c) 2015 Aaron Harvey - aaron.harvey@fairchildsemi.com
  *  MIT License
  */
@@ -13,11 +13,8 @@
     var hash = window.location.hash.split("?");
     hash.shift();
 
-    var store = {};
+    var match, store = {};
     var queryString = search || hash.join('?');
-    if (!queryString) return undefined;
-
-    var match;
     while ((match = regex.exec(queryString))) {
         store[decodeURIComponent(match[1])] = decodeURIComponent(match[2]);
     }
