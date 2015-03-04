@@ -1,12 +1,14 @@
 {
   "name": "micro-query",
-  "version": "0.1.1",
-  "description": "Aims to be a tiny and fast query parsing lib.",
+  "version": "0.1.2",
+  "description": "A minimal url query parsing library.",
   "main": "micro-query.js",
   "keywords": [
     "Params",
     "query",
-    "parsing"
+    "parsing",
+    "url",
+    "querystring"
   ],
   "authors": [
     {"name": "Aaron Harvey", "email" : "aaron.harvey@fairchildsemi.com" }

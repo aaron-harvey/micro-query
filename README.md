@@ -1,5 +1,5 @@
 # micro-query.js
-[![Bower version](http://img.shields.io/badge/bower%20package-0.1.1-brightgreen.svg?style=flat)](https://github.com/aaron-harvey/micro-query)
+[![Bower version](http://img.shields.io/badge/bower%20package-0.1.2-brightgreen.svg?style=flat)](https://github.com/aaron-harvey/micro-query)
 ![license](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)
 
 A minimal (<300 bytes minified) URL parameter parsing library based on [query-js](https://github.com/Nijikokun/query-js).
