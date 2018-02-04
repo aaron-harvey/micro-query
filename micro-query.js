@@ -18,7 +18,17 @@
         store[decodeURIComponent(match[1])] = decodeURIComponent(match[2]);
     }
 
-    window.uQuery = function (needle) {
+    var uQuery = function (needle) {
         return store[needle];
     };
+
+    if (typeof define === 'function' && define.amd) {
+        define([], function() {
+            return uQuery;
+        });
+    } else if (typeof exports === 'object') {
+        module.exports = uQuery;
+    } else {
+        window.uQuery = uQuery;
+    }
 })();
